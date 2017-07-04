@@ -74,9 +74,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
-                        <h1>Man must explore, and this is exploration at its greatest</h1>
-                        <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
-                        <span class="meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</span>
+                        <h1>Personalizing Content in Drupal 7 using Sharpspring Module</h1>
                     </div>
                 </div>
             </div>
@@ -88,40 +86,78 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+                    <h2><i>What is Personalization?</i></h2>
 
-                    <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
 
-                    <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
 
-                    <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+                    <p>When you go to a cafe and ask for a “Coffee”, the barista asks you how you want it, your answer depends upon the choices made available to you. Based upon what your requirements / likes / dislikes are, the barista makes the coffee. And if you are a regular visitor and have interacted with the coffee maker several times then he might not need to ask what you like.</p>
 
-                    <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
 
-                    <h2 class="section-heading">The Final Frontier</h2>
 
-                    <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+                    <p>Personalization is similar to the process above, based upon the user characteristics and user profile, the content on the site is being displayed. And when sometimes user interacts with the website by filling out a form or just visiting a page, we capture the details and based upon user interests we prioritize the content or change the content completely.</p>
 
-                    <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+                    <h2><i>Why do we need personalization ?</i></h2>
 
-                    <blockquote>The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
+                    <p>Personalization is the key for content marketing, an important implementation for websites for customizing and displaying different content to the users based upon their characteristics.
+                    One of the best tools to determine what user is interested in and then according to the data collected, making improvements in the UI or the content available on the site.
+                        Researchers say that “More the content is personalized , more is the user visits on the website”.</p>
 
-                    <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
+                    <h2><i>How can we achieve personalization in Drupal ?</i></h2>
 
-                    <h2 class="section-heading">Reaching for the Stars</h2>
 
-                    <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
+                    <p>There are several tools and modules available to achieve content personalization on a website, such as modules named</p>
 
-                    <a href="#">
-                        <img class="img-responsive" src="img/post-sample-image.jpg" alt="">
-                    </a>
-                    <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+                    → <b>Personalization</b> : Provides configuration to add implicit and explicit personalization to drupal websites based upon geolocation and taxonomies.
 
-                    <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
+                    → <b>Sharpspring and Sharpspring Personalize</b> : These modules can be used to add sharpspring tracking to website pages and also personalize content on the website using data returned from sharpspring of page-visits or information about the user/lead visiting the page.
 
-                    <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
+                    And an acquia product named as,
 
-                    <p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+                    → <b>Acquia Lift</b> : Solution that unifies content and customer data from multiple sources to deliver data-driven, personalized experiences across any channel or device
+
+
+                    Here we will be using sharpspring module to achieve content personalization of a single block or we can say that our purpose is to display personalized content to different users/leads according to their profile present on sharpspring
+
+                    <h2><i>What is Sharpspring ?</i></h2> 
+
+                    <p>SharpSpring is a marketing automation platform that combines site analytics and lead generation in one Platform as a Service.
+
+
+
+                        It tracks user activities on website and provides relevant data to the admin so that more powerful automation rules can be build to send dynamic content to the lead and target lead based upon their interests.</p>
+
+                    <h2><i>Workflow of the implementation :</h2></i>
+
+
+
+                         
+
+
+
+                    <p>The flow starts with an email that is sent from sharpspring web portal to the targeted lead, with the URL of the website whose personalized content is to be displayed. Here we are making an assumption of the lead data to be present on sharpspring web portal.
+                    The lead receives an email and clicks on the URL present in the mail, as soon as the link is clicked the lead is then redirected to the drupal website.
+                    The sharpspring module installed on the drupal portal gets parameters from the URL and makes an API call back to sharpspring portal.
+                        Sharpspring then recognizes the person who clicked on the link as a lead (if the profile is created on sharpspring) and returns all the data present on the portal related to that lead in a form of a JSON object as shown below : </p>
+
+
+
+
+                   <p> In our drupal portal, we are then capturing lead details in a form of a cookie, and then reading the data from the cookie,
+                    - Also we have our content tagged with a taxonomy term, in our case let’s take an example of the taxonomy term as “Job Title”, in this case the title that will be captured is “Intern”. Now only the content on the site tagged with the term intern will be displayed to the lead here named as “Panshul Khurana”. In case for a different Lead where Title is “Developer”, only the content tagged with the term “Developer” will be displayed to that specific lead.
+
+                       Hence, according to the Lead details captured from the sharpspring portal, the content on the site is being personalized for that specific lead. </p>
+
+                    <h2><i>Pre-Requisites in the current implementation :</i></h2>
+
+                    <ul>
+                        <li>Lead must have a profile at sharpspring. </li>
+
+                        <li>Lead must click the promotional link at least once to consume content personalization.</li>
+
+                        <li>There can be multiple ways to achieve personalization, to make it better the idea is to automate the system or develop a system which is not dependent on a third party tool and have a system that captures user details and displays the personalized content at any level be it block level, content level or even a UI based personalization.</li>
+
+                        <li>After all it is all about providing a customer his favourite coffee in his favourite style ;) </li>
+                    </ul>
                 </div>
             </div>
         </div>
