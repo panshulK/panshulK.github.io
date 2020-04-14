@@ -1,27 +1,32 @@
 {
-  "name": "clean-blog",
-  "title": "Clean Blog",
-  "version": "3.3.7+1",
-  "homepage": "http://startbootstrap.com/template-overviews/clean-blog",
-  "author": "Start Bootstrap",
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+  "name": "browser-sync-jekyll",
+  "version": "0.0.0",
+  "description": "My starter project including full setup for Jekyll, GulpJS, SASS & BrowserSync",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "Shane Osbourne",
+  "license": "ISC",
   "devDependencies": {
-    "bootstrap": "^3.3.7",
-    "browser-sync": "^2.13.0",
-    "font-awesome": "^4.6.3",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.10",
-    "gulp-header": "^1.8.7",
-    "gulp-less": "^3.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.5.4",
-    "jquery": "^1.11.3"
+    "browser-sync": "^2.8.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "2.3.1",
+    "gulp-jade": "^1.0.1",
+    "gulp-sass": "^4.0.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-clean-blog.git"
-  }
+    "url": "https://github.com/bawn92/bawn92.git"
+  },
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "browsersync"
+  ],
+  "bugs": {
+    "url": "https://github.com/bawn92/bawn92.git"
+  },
+  "homepage": "https://github.com/bawn92/bawn92.git"
 }
